@@ -27,6 +27,8 @@ and open the template in the editor.
             <form action="" name="nameForm" method="post" >
                 <h2>REGISTRO DE RECLAMOS</h2>
                
+                <h3>1. IDENTIFICACION DEL USUARIO O TERCERO LEGITIMADO</h3>
+                
                 <div class="form-group">
                     <select id="selectExample1" class="custom-select" required>
                        
@@ -34,11 +36,11 @@ and open the template in the editor.
                         <option value="1">DNI</option>
                         <option value="2">RUC</option>
                         <option value="3">PASAPORTE</option>
-                        <option value="3">CARNET DE EXTRANJERIA</option>
+                        <option value="4">CARNET DE EXTRANJERIA</option>
                     </select>
                     <small id="selectHelp" class="form-text text-muted">Selecciona al menos una opción.</small>
                     <div class="valid-feedback">
-                        ¡Fantástica elección!
+                        ¡Fantástica elección!!
                     </div>
                     <div class="invalid-feedback">
                         No te olvides de seleccionar al menos una opción.
@@ -80,6 +82,32 @@ and open the template in the editor.
                         No es un correo electrónico
                     </div>
                 </div>
+
+                <div class="form-group">
+                    <label for="numeroExample1">Telefono</label>
+                    <input type="number" class="form-control"  id="numeroExample1" aria-describedby="Numero" placeholder="Numero de telefono" size="9" maxlength="9">
+                    <small id="numeroHelp" class="form-text text-muted">Escribe solo números.</small>
+                    <div class="valid-feedback">
+                        Se ve bien!
+                    </div>
+                    <div class="invalid-feedback">
+                        El texto no es un número.
+                    </div>
+                </div>
+                
+                <h4>2. IDENTIFICACION DE QUIEN PRESENTA EL RECLAMO</h4>
+                <div class="custom-control custom-checkbox mb-3">
+                    <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+                    <label class="custom-control-label" for="customControlValidation1">Marque si es el usuario afectado</label>
+                    <small id="checkboxHelp" class="form-text text-muted">Acá puedes ver nuestras políticas <a href="#" class="alert-link">Declaración de privacidad</a></small>
+                    <div class="valid-feedback">
+                        ¡No te arrepentirás!
+                    </div>
+                    <div class="invalid-feedback">
+                        ¡No sabes de lo que te pierdes!
+                    </div>
+                </div>
+
                 <!--Inicio de radios-->
                 <div class="custom-control custom-radio">
                     <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
